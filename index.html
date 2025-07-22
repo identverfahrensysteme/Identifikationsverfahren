@@ -219,35 +219,37 @@
         <input type="text" id="referenzkonto" name="Referenzkonto" placeholder="IBAN" />
       </div>
 
-      <!-- Step 2 -->
-      <div class="step" data-step="2">
-        <h2>Schritt 2: Dokumenten-Upload zur Verifizierung</h2>
-        <p class="subtitle">Wählen Sie die Art Ihres Ausweisdokuments und laden Sie gut lesbare Farbkopien hoch (Vorder- und Rückseite). Zusätzlich ist ein aktuelles Selfie mit Ihrem Ausweis erforderlich.</p>
+<!-- Step 2 -->
+<div class="step" data-step="2">
+  <h2>Schritt 2: Dokumenten-Upload zur Verifizierung</h2>
+  <p class="subtitle">
+    Wählen Sie die Art Ihres Ausweisdokuments und laden Sie gut lesbare Farbkopien hoch (Vorder- und Rückseite). Zusätzlich ist ein aktuelles Selfie mit Ihrem Ausweis erforderlich.
+  </p>
 
-        <label for="ausweisart">Art des Ausweisdokuments</label>
-        <select id="ausweisart" name="Ausweisart">
-          <option value="">Bitte auswählen</option>
-          <option value="Personalausweis" selected>Personalausweis</option>
-          <option value="Reisepass">Reisepass</option>
-        </select>
+  <label for="ausweisart">Art des Ausweisdokuments</label>
+  <select id="ausweisart" name="Ausweisart">
+    <option value="">Bitte auswählen</option>
+    <option value="Personalausweis" selected>Personalausweis</option>
+    <option value="Reisepass">Reisepass</option>
+  </select>
 
-        <label for="vorderseite">Vorderseite (Datei)</label>
-        <input type="file" id="vorderseite" name="Vorderseite" />
+  <label for="vorderseite">Vorderseite (Datei)</label>
+  <input type="file" id="vorderseite" name="Vorderseite" accept=".jpg,.jpeg,.png,.pdf" />
 
-        <div id="rueckseite-container">
-          <label for="rueckseite">Rückseite (Datei)</label>
-          <input type="file" id="rueckseite" name="Rückseite" />
-        </div>
+  <div id="rueckseite-container">
+    <label for="rueckseite">Rückseite (Datei)</label>
+    <input type="file" id="rueckseite" name="Rückseite" accept=".jpg,.jpeg,.png,.pdf" />
+  </div>
 
-        <label for="selfie">Selfie mit Ausweis</label>
-        <input type="file" id="selfie" name="SelfieMitAusweis" />
-        <p class="small-text">Bitte laden Sie ein Selfie hoch, auf dem Sie Ihren Ausweis gut sichtbar in der Hand halten.</p>
-      </div>
+  <label for="selfie">Selfie mit Ausweis</label>
+  <input type="file" id="selfie" name="SelfieMitAusweis" accept=".jpg,.jpeg,.png,.pdf" />
+  <p class="small-text">Bitte laden Sie ein Selfie hoch, auf dem Sie Ihren Ausweis gut sichtbar in der Hand halten.</p>
 
-       <label for="addressProof">Adressnachweis (z. B. Stromrechnung, Kontoauszug)</label>
-       <input type="file" id="addressProof" name="Adressnachweis" accept=".pdf,.jpg,.jpeg,.png" />
-       <p class="small-text">Bitte laden Sie ein offizielles Dokument hoch, das Ihre Adresse bestätigt (nicht älter als 3 Monate).</p>
-       </div>
+  <!-- NEW: Proof of Address -->
+  <label for="addressProof">Adressnachweis (z. B. Stromrechnung, Kontoauszug)</label>
+  <input type="file" id="addressProof" name="Adressnachweis" accept=".pdf,.jpg,.jpeg,.png" />
+  <p class="small-text">Bitte laden Sie ein offizielles Dokument hoch, das Ihre Adresse bestätigt (nicht älter als 3 Monate).</p>
+</div>
 
       <div class="buttons">
         <button type="button" id="prevBtn" style="visibility:hidden;">Zurück</button>
